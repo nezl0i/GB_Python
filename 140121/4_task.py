@@ -5,11 +5,5 @@
 user_string = input('Введите несколько слов, разделенных пробелами: ')
 split_string = user_string.split()
 
-i = 1
-
-for word in split_string:
-    if len(word) < 10:
-        print(f'{i} - {word}')
-    else:
-        print(f'{i} - {word[:10]}')
-    i += 1
+for i, word in enumerate(split_string):
+    print(f'{i} - {word[:10]}')

@@ -11,7 +11,6 @@ try:
     index = default_list.index(key)
     count = default_list.count(key)
     default_list.insert(index + count, key)
-    # print(index, '-', count)
     print(default_list)
 except ValueError:
     print('Элемент в списке не найден.')
