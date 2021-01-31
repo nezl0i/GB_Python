@@ -55,28 +55,17 @@ class WorkCar(Car):
 
 
 class PoliceCar(Car):
-    def __init__(self, speed, color, name, is_police=False):
-        super().__init__(speed, color, name, is_police)
-        self.__get_is_policy()
-
-    def __get_is_policy(self):
-        if self.is_police:
-            print('This car is policy')
-        else:
-            print('Ok, this car is not policy!')
+    pass
 
 
 town = TownCar(100, "Yellow", "Vesta")
 sport = SportCar(170, "Red", "Mustang")
 work = WorkCar(40, "Blue", "Niva")
-police = PoliceCar(90, "White", "Bibika", True)
 
 town.turn('Налево')
 sport.turn('Направо')
 work.turn('Направо')
-police.turn('Налево')
 
 sport.stop()
-police.stop()
 town.show_speed()
 work.show_speed()
