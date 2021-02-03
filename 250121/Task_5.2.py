@@ -4,11 +4,9 @@
 # Вариант 1
 with open("example_5.2.txt") as f:
     content = f.readlines()
-    print(f'Количество строк в файле - {len(content)}')
-    count = 1
-    for el in content:
-        print(f'Строка {count} - слов {len(el.split(" "))}')
-        count += 1
+print(f'Количество строк в файле - {len(content)}')
+for index, el in enumerate(content):
+    print(f'Строка {index+1} - слов {len(el.split(" "))}')
 
 # Вариант 2
 # try:
